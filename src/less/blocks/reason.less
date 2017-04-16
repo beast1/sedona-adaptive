@@ -1,0 +1,65 @@
+.reason {
+  padding: 50px;
+  
+  &__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+    
+    text-align: center;
+    
+    &::before,
+    &::after {
+      content: '';
+      
+      display: flex;
+      flex-grow: 2;
+      height: 2px;
+      max-width: 14px;
+    }
+    
+    &::before {
+      margin-right: 5px;
+    }
+    
+    &::after {
+      margin-left: 5px;
+    }
+  }
+}
+
+.photo-card .reason {
+  &__title {
+    .h2(@color-main);
+  }
+  
+  &__number {
+    &::before,
+    &::after {
+      background-color: @color-main;
+    }
+  }
+  
+  &__description {
+    .p(@color-main);
+  }
+}
+
+.reasons-list .reason {
+  flex-basis: 33%;
+  &__title {
+    .h2(@color-second);
+  }
+  
+  &__number {
+    &::before,
+    &::after {
+      background-color: @color-second;
+    }
+  }
+  
+  &__description {
+    .p(@color-second);
+  }
+}

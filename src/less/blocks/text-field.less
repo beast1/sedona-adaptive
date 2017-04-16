@@ -1,0 +1,44 @@
+.text-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  &__main {
+    .h2(@color-second);
+    
+    margin-bottom: 40px;
+  }
+  
+  &__secondary {
+    .p(@color-second);
+  }
+}
+
+.text-field--promo {
+  height: 780px;
+  padding-top: 564px;
+  
+  background: 
+    url('../img/banner-text.png') no-repeat center 100px,
+    url('../img/banner-picture.jpg') no-repeat center center
+  ;
+  background-color: @color-main-action;
+  
+  &__main {
+    margin-top: 40px;
+  }
+}
+
+.text-field--promo .text-field__main {
+    margin-top: 40px;
+}
+
+.text-field--question .text-field__main {
+  margin-top: 55px;
+  font-size: @font-size--h1;
+  line-height: @line-height--h1;
+}
+
+.text-field--question .text-field__secondary {
+  margin-bottom: 50px;
+}

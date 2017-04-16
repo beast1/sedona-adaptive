@@ -8,3 +8,69 @@
   font-size: @font-size;
   font-weight: 400;
 }
+
+.un-list() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.un-btn() {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.h2(@text-color) {
+  display: block;
+  margin: 0;
+  
+  color: @text-color;
+  font-size: @font-size--h2;
+  line-height: @line-height--h2;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.p(@text-color) {
+//  display: flex;
+//  justify-content: center;
+  margin: 0;
+  
+  color: @text-color;
+  font-size: @font-size;
+  line-height: @line-height;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.react--transition(@transition) {
+  transition: @transition;
+}
+
+.react--background(@color; @color-hover; @color-active) {
+  background: @color;
+  
+  &:hover {
+    background: @color-hover;
+  }
+  
+  &:active {
+    background: @color-active;
+  }
+}
+
+.react--color(@color; @color-hover; @color-active) {
+  color: @color;
+  
+  &:hover {
+    color: @color-hover;
+  }
+  
+  &:active {
+    color: @color-active;
+  }
+}

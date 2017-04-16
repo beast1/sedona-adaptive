@@ -1,11 +1,16 @@
 //colors
+@color-main-transparent: rgba(255, 255, 255, 0.3);
 @color-main: #ffffff;
 
 @color-second: #000000;
 @color-second-light: #333333;
 
+@color-main-action-darken: #5497be;
+@color-main-action-dark: #669fc1;
 @color-main-action: #81b3d2;
 
+@color-second-action-darken: #503e33;
+@color-second-action-dark: #604e43;
 @color-second-action: #766357;
 
 @gray-dark: #eeeeee;
@@ -14,14 +19,45 @@
 
 //media
 @screen-xs: 425px;
-@screen-sm: 768px;
-@screen-mp: 1200px;
 
 //vertycal-rhytm
 @font-family: 'PT Sans', sans-serif;
 
-@font-size: 14px;
-@font-size--h1: 21px;
+@font-size: 18px;//14px
+@font-size--h1: 28px;//24px
+@font-size--h2: 24px;//21px
+@font-size--menu: @font-size;
 
-@line-height: 18px;
-@line-height--h1: 26px;
+@line-height: 20px;//26x
+@line-height--h1: 30px;//24px
+@line-height--h2: 26px;//21px
+@line-height--menu: @line-height;
+
+//states color
+  //main-header
+@btn-nav-text: @color-second;
+@btn-nav-text--hover: @color-main-action;
+@btn-nav-text--active: @gray;
+
+  //btn-1
+@btn-1-background: @color-main-action;
+@btn-1-background--hover: @color-main-action-dark;
+@btn-1-background--active: @color-main-action-darken;
+
+@btn-1-text: @color-main;
+@btn-1-text--hover: @color-main;
+@btn-1-text--active: @color-main-transparent;
+
+  //btn-2
+@btn-2-background: @color-second-action;
+@btn-2-background--hover: @color-second-action-dark;
+@btn-2-background--active: @color-second-action-darken;
+
+@btn-2-text: @color-main;
+@btn-2-text--hover: @color-main;
+@btn-2-text--active: @color-main-transparent;
+
+  //input
+@input-background: @gray;
+@input-background--hover: @gray-dark;
+@input-background--active: @gray-dark;

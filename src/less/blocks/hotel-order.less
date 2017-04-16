@@ -1,0 +1,67 @@
+.hotel-order {
+  position: relative;
+  min-width: 570px;
+  
+  &__btn-toggle {
+    .un-btn();
+    .react--transition(all 0.1s ease);
+    .react--background(@btn-2-background; @btn-2-background--hover; @btn-2-background--active);
+    .react--color(@btn-2-text; @btn-2-text--hover; @btn-2-text--active);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 86px;
+    
+    color: @color-main;
+    font-size: @font-size--h2;
+    line-height: @line-height--h2;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+
+    background-color: @color-second-action;
+  }
+  
+  &__form {
+    position: absolute;
+    right: 0;
+    bottom: -395px;
+    left: 0;
+    z-index: 1;    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 395px;
+    padding: 55px;
+    
+    background-color: @color-main;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+//    visibility: hidden;
+//    opacity: 0;
+  }
+  
+  &__form-submit {
+    .un-btn();
+    .react--transition(all 0.1s ease);
+    .react--background(@btn-1-background; @btn-1-background--hover; @btn-1-background--active);
+    .react--color(@btn-1-text; @btn-1-text--hover; @btn-1-text--active);
+    
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin-top: auto;
+    
+    font-size: @font-size--h2;
+    line-height: @line-height--h2;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+} 
+

@@ -1,0 +1,66 @@
+.social {
+  display: flex;
+  
+  &__item {
+    .react--transition(all 0.1s ease);
+    .react--background(@btn-1-background; @btn-1-background--hover; @btn-1-background--active);
+    
+    position: relative;
+    
+    display: flex;
+    width: 46px;
+    height: 48px;
+    
+    font-size: 0;
+    
+    &:not(:last-of-type) {
+      margin-right: 6px;
+    }
+    
+    &::before {
+      content: '';
+      
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      
+      width: 20px;
+      height: 20px;
+      margin-left: -10px;
+      margin-top: -10px;
+      
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+  
+  &__item:nth-of-type(1) {
+    &::before {
+      background-image: url('../img/social-twit-w-t.png');  
+    }
+    &:active::before {
+      opacity: 0.4;
+      background-image: url('../img/social-twit-w-t.png');
+    }
+  }
+  
+  &__item:nth-of-type(2) {
+    &::before {
+      background-image: url('../img/social-face-w-t.png');
+    }
+    &:active::before {
+      opacity: 0.4;
+      background-image: url('../img/social-face-w-t.png');
+    }
+  }
+  
+  &__item:nth-of-type(3) {
+    &::before {
+      background-image: url('../img/social-youtube-w-t.png');
+    }
+    &:active::before {
+      opacity: 0.4;
+      background-image: url('../img/social-youtube-w-t.png');
+    }
+  }
+}
